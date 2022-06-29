@@ -90,7 +90,6 @@ const previewChangelog = ({changelogPath, buildPath}) => {
     const changelogData = parseChangelog(changelogPath);
     changelogData.then(changelog => {
         let changelogHtml = handlebars_template(changelog);
-        console.log(`changelogHtml`, changelogHtml)
 
         // create build folder and move css folder to build folder
         fs.mkdir(buildPath, {recursive: true}, (err) => {
