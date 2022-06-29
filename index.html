@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>[title]</title>
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
+
+    <link id="cd-base-part-1" rel="stylesheet" href="./css/style.css">
+    <link id="codyframe" rel="stylesheet" href="./css/changelog.css?v=7000210">
+
+    <script>
+        if (!('CSS' in window) || !CSS.supports('color', 'var(--color-var)')) {
+            let cfStyle = document.getElementById('codyframe');
+            if (cfStyle) {
+                let href = cfStyle.getAttribute('href');
+                href = href.replace('changelog.css', 'changelog-ie.css');
+                cfStyle.setAttribute('href', href);
+            }
+        }
+    </script>
+
+</head>
+<body>
+<div class="container max-width-adaptive-md padding js-cd-demo">
+    <section class="changelog position-relative z-index-1 margin-bottom-xl">
+        <div id="changelog"></div>
+    </section>
+</div>
+</body>
+</html>

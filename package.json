@@ -1,0 +1,35 @@
+{
+  "name": "changelog-preview",
+  "description": "CLI to convert a CHANGELOG.md following the http://keepachangelog.com convention to a static web page with permalinks and a GitHub look and feel.",
+  "bin": "./bin/cli.js",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apo-bozdag/changelog-preview.git"
+  },
+  "bugs": {
+    "url": "https://github.com/apo-bozdag/changelog-preview/issues"
+  },
+  "author": "Abdullah Bozdag <abdullah@radkod.com>",
+  "contributors": [
+    "Abdullah Bozdag <abdullah@radkod.com>"
+  ],
+  "main": "index.js",
+  "dependencies": {
+    "changelog-parser": "^2.8.1",
+    "fs": "^0.0.1-security",
+    "handlebars": "^4.7.7",
+    "process": "^0.11.10",
+    "showdown": "^2.1.0",
+    "yargs": "^17.5.1"
+  },
+  "keywords": [
+    "CHANGELOG.md",
+    "changelog",
+    "preview",
+    "semantic",
+    "changelogtohtml",
+    "keepachangelog"
+  ]
+}
