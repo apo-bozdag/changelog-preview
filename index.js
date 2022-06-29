@@ -87,7 +87,10 @@ const handlebars_template = Handlebars.compile(`
 `);
 
 const previewChangelog = ({changelogPath, buildPath}) => {
-    const changelogData = parseChangelog(changelogPath);
+    const changelogData = parseChangelog({
+        filePath: changelogPath,
+        removeMarkdown: false
+    });
     changelogData.then(changelog => {
         let changelogHtml = handlebars_template(changelog);
 
